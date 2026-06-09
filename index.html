@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>居酒屋ゆずりは | 浦安の温かいアットホームな居酒屋</title>
+  <meta name="description" content="大分・浦安で長年愛されてきた居酒屋「柊」の想いを受け継ぎ、新たにスタートした「居酒屋ゆずりは」。サクふわのとり天とジューシーな肉汁溢れる唐揚げが自慢です。実家や友達の家のように、気を張らずに過ごせる温かい時間をお届けします。">
+  
+  <!-- OGP Tags -->
+  <meta property="og:title" content="居酒屋ゆずりは | 浦安">
+  <meta property="og:description" content="大分・浦安で愛された「柊」の味と想いを受け継ぐ、アットホームな居酒屋。名物のとり天と唐揚げをどうぞ。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yuzuriha-urayasu.com/">
+  
+  <!-- Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- CSS StyleSheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Leaves Container -->
+  <div id="leaves-container" class="leaves-container"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" id="header-logo">
+        <span class="logo-icon">
+          <img src="img/ロゴ.jpg" alt="居酒屋ゆずりは ロゴ" width="40" height="40" style="border-radius: 50%; object-fit: cover;">
+        </span>
+        <span class="logo-text">居酒屋 ゆずりは</span>
+      </a>
+      
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="#about">ゆずりはについて</a></li>
+          <li><a href="#history">柊との繋がり</a></li>
+          <li><a href="#menu">自慢の逸品</a></li>
+          <li><a href="#booking">ご予約</a></li>
+          <li><a href="#info">店舗情報</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger Menu Button -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="メニューを開く">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="#about" class="mobile-nav-link">ゆずりはについて</a></li>
+      <li><a href="#history" class="mobile-nav-link">柊との繋がり</a></li>
+      <li><a href="#menu" class="mobile-nav-link">自慢の逸品</a></li>
+      <li><a href="#booking" class="mobile-nav-link">ご予約</a></li>
+      <li><a href="#info" class="mobile-nav-link">店舗情報</a></li>
+      <li><a href="#contact" class="mobile-nav-link">お問い合わせ</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <p>ご予約は下記リンクよりお進みください</p>
+      <div class="mobile-booking-shortcuts">
+        <a href="https://www.instagram.com/yuzuriha.urayasu/" target="_blank" rel="noopener" class="mobile-booking-link insta">Instagram DM</a>
+        <a href="https://www.hotpepper.jp/strJ004558711/" target="_blank" rel="noopener" class="mobile-booking-link hp">ホットペッパーグルメ</a>
+        <a href="https://lin.ee/ss9lx9Rj" target="_blank" rel="noopener" class="mobile-booking-link line">公式LINE</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-accent"></div>
+      <div class="hero-container">
+        
+        <!-- Left Side: Copy and Title -->
+        <div class="hero-content scroll-reveal">
+          <div class="hero-badge">
+            <span>想いを受け継ぎ、次へ繋ぐ</span>
+            <span class="badge-leaf">
+              <svg viewBox="0 0 100 150" width="16" height="24">
+                <path d="M 50 150 C 48 110, 52 80, 50 50" stroke="#C85A4B" stroke-width="6" fill="none" stroke-linecap="round"/>
+                <path d="M 50 110 C 25 90, 20 50, 50 10 C 80 50, 75 90, 50 110 Z" fill="#2D4B37" stroke="#223829" stroke-width="2"/>
+              </svg>
+            </span>
+          </div>
+          <h1 class="hero-title">
+            <span class="title-main">居酒屋 ゆずりは</span>
+            <span class="title-sub">Urayasu, Chiba</span>
+          </h1>
+          <p class="hero-lead">
+            サクふわのとり天と、ジューシーな肉汁溢れる唐揚げが自慢です。<br>
+            心ゆくまで賑やかなひとときをお過ごし下さい。
+          </p>
+          <div class="hero-cta-group">
+            <a href="#booking" class="btn btn-primary">ご予約はこちら</a>
+            <a href="#about" class="btn btn-outline">ゆずりはの物語</a>
+          </div>
+        </div>
+
+        <!-- Right Side: Asymmetric Visual Collage -->
+        <div class="hero-visual scroll-reveal delay-1">
+          <div class="visual-wrapper">
+            <!-- 歪んだ・傾いたグリッドレイアウトの表現 -->
+            <div class="visual-item item-main">
+              <img src="img/外観.jpg" alt="居酒屋ゆずりは 外観" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="visual-item item-sub">
+              <img src="img/お酒.jpg" alt="美味しいお酒" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="visual-item item-accent">
+              <div class="accent-box">
+                <p class="accent-text">実家のように、<br>友達の家のように。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Message / Philosophy Section -->
+    <section class="message-section" id="message">
+      <div class="message-container scroll-reveal">
+        <h2 class="vertical-title">想い</h2>
+        <div class="message-text">
+          <p class="lead-phrase">「ただいま」と言いたくなる場所を目指して。</p>
+          <p>
+            扉を開ければ、そこにあるのは温かい笑顔と香ばしい香り。<br>
+            わたしたちが大切にしているのは、おいしい料理はもちろん、<br>
+            お客様が肩の力を抜いて、心からリラックスできる時間です。
+          </p>
+          <p class="signature">居酒屋ゆずりは 一同</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section (紹介文) -->
+    <section class="about-section" id="about">
+      <div class="container">
+        
+        <div class="about-grid">
+          <div class="about-image scroll-reveal">
+            <img src="img/店内.jpg" alt="アットホームな店内の様子" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
+            <!-- ゆずりはの葉の装飾（アシンメトリーな配置） -->
+            <div class="deco-leaf leaf-1">
+              <svg viewBox="0 0 100 150" width="120" height="180">
+                <path d="M 50 150 C 48 110, 52 80, 50 50" stroke="#C85A4B" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <path d="M 50 110 C 25 90, 20 50, 50 10 C 80 50, 75 90, 50 110 Z" fill="#2D4B37" opacity="0.85"/>
+              </svg>
+            </div>
+          </div>
+          
+          <div class="about-content scroll-reveal delay-1">
+            <span class="section-sub">About Us</span>
+            <h2 class="section-title">居酒屋ゆずりはについて</h2>
+            <div class="story-block">
+              <p>
+                「ゆずりは」は、大分・浦安で長年愛されてきた居酒屋「柊（ひいらぎ）」の想いを受け継ぎ、新たな形でスタートしたお店です。
+              </p>
+              <p>
+                店名の「ゆずりは」は、想いを受け継ぎ、次へ繋いでいくという意味を込めています。<br>
+                これまで柊を大切にしてくださった方々にも、<br>
+                これから初めて出会う方々にも、<br>
+                どこか安心できる場所でありたい。
+              </p>
+              <p>
+                実家のように、友達の家のように、気を張らずに過ごせて、美味しい料理とお酒を囲みながら自然と笑顔になれる。そんなアットホームで温かい居酒屋をこれからも目指していきます。
+              </p>
+              <p class="highlight-text">皆さまのご来店を心よりお待ちしております。</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- History Section (柊との繋がり) -->
+    <section class="history-section" id="history">
+      <div class="history-bg-wave"></div>
+      <div class="container">
+        <div class="history-header scroll-reveal">
+          <span class="section-sub">Our Roots</span>
+          <h2 class="section-title">柊～ゆずりはの繋がり</h2>
+        </div>
+
+        <div class="timeline-container">
+          <!-- 想いを繋ぐ「赤い糸（ゆずりはの茎）」を模したライン -->
+          <div class="timeline-line"></div>
+
+          <!-- Step 1 -->
+          <div class="timeline-item scroll-reveal">
+            <div class="timeline-number">01</div>
+            <div class="timeline-content">
+              <h3>みんなのお母さん、和子さん</h3>
+              <p>
+                柊の店主 和子さんは、常連さんたちから｢みんなのお母さん｣のように慕われる存在でした。大分から浦安へ移転してからも約15年にわたり、多くの人に愛され続けてきました。
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-item alt scroll-reveal">
+            <div class="timeline-number">02</div>
+            <div class="timeline-content">
+              <h3>偶然の出会いと、通い詰めた日々</h3>
+              <p>
+                数年前、ゆずりはオーナーのたかいちと店長のしゅんちゃんが浦安の飲食店巡りをしていたある日、偶然立ち寄ったお店が柊でした。そこから何度も足を運ぶようになり、気付けば｢帰ってきたくなる場所｣になりました。お店に通う中でたくさんの大切なものを柊で学ばせてもらいました。
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-item scroll-reveal">
+            <div class="timeline-number">03</div>
+            <div class="timeline-content">
+              <h3>想いを絶やさず、新たな一歩へ</h3>
+              <p>
+                和子さんの引退をきっかけに「この愛されてきた場所や味をなくしたくない」そんな想いから、たかいちとしゅんちゃんの二人で｢ゆずりは｣として新たな一歩を踏み出しました。
+              </p>
+            </div>
+            <div class="timeline-image">
+              <img src="img/オーナー.jpg" alt="オーナーのたかいちと店長のしゅんちゃん" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu / Specialty Section -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="menu-header scroll-reveal">
+          <span class="section-sub">Specialty</span>
+          <h2 class="section-title">自慢のふたつ</h2>
+          <p class="menu-intro">ゆずりはが絶対の自信を持ってお届けする、お酒にぴったりな看板メニューです。</p>
+        </div>
+
+        <div class="menu-grid">
+          <!-- Specialty 1 -->
+          <div class="menu-card scroll-reveal">
+            <div class="menu-card-image">
+              <img src="img/とり天.jpg" alt="名物！サクふわ とり天" style="width:100%; height:100%; object-fit:cover;">
+              <span class="menu-badge">看板メニュー</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>サクふわ とり天</h3>
+              <p class="menu-desc">
+                大分発祥の味を受け継いだ、外はサクッと、中はフワッと柔らかい自慢のとり天。特製のタレやカボスを添えて、さっぱりとお召し上がりください。
+              </p>
+            </div>
+          </div>
+
+          <!-- Specialty 2 -->
+          <div class="menu-card scroll-reveal delay-1">
+            <div class="menu-card-image">
+              <img src="img/唐揚げ.jpg" alt="ジューシー！肉汁唐揚げ" style="width:100%; height:100%; object-fit:cover;">
+              <span class="menu-badge">人気爆発</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>肉汁溢れる唐揚げ</h3>
+              <p class="menu-desc">
+                一口噛めば、口いっぱいにジュワッとあふれ出す秘伝のタレに漬け込んだジューシーな唐揚げ。ビールやハイボールとの相性は抜群です。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section (その他のメニュー・お酒) -->
+    <section class="gallery-section scroll-reveal" id="gallery">
+      <div class="container">
+        <div class="gallery-header">
+          <span class="section-sub">Menu Gallery</span>
+          <h2 class="section-title">お品書きと美味しいお酒</h2>
+          <p class="gallery-intro">ゆずりはでは、とり天・唐揚げの他にも豊富なおつまみと美味しいお酒をご用意しております。日替わりメニューなどは店内にてご確認ください！</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="img/メニュー.jpg" alt="おつまみメニュー 1" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="img/メニュー2.jpg" alt="おつまみメニュー 2" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="img/メニュー3.jpg" alt="おつまみメニュー 3" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="img/メニュー4.jpg" alt="おつまみメニュー 4" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="img/メニュー5.jpg" alt="おつまみメニュー 5" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="img/メニュー6.jpg" alt="おつまみメニュー 6" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="img/メニュー7.jpg" alt="おつまみメニュー 7" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="img/メニュー8.jpg" alt="おつまみメニュー 8" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="img/メニュー9.jpg" alt="おつまみメニュー 9" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="img/お酒2.jpg" alt="豊富なお酒" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Details Section (詳しくはこちら) -->
+    <section class="menu-details-section" id="menu-details">
+      <div class="container scroll-reveal">
+        <div class="details-header">
+          <h3 class="details-title">詳しくはこちら</h3>
+          <p class="details-lead">ボタンを押すと、各お品書きの詳細画像が大きく表示されます。</p>
+        </div>
+
+        <div class="menu-detail-buttons">
+          <button class="menu-detail-btn detail-trigger" data-menu-type="drink">
+            <span class="btn-main-text">ドリンクメニューはこちら</span>
+            <span class="btn-sub-text">生ビール・ハイボール・日本酒など</span>
+          </button>
+          
+          <button class="menu-detail-btn detail-trigger" data-menu-type="grand">
+            <span class="btn-main-text">メニューはこちら</span>
+            <span class="btn-sub-text">自慢のとり天・唐揚げ、逸品料理</span>
+          </button>
+          
+          <button class="menu-detail-btn detail-trigger" data-menu-type="lunch">
+            <span class="btn-main-text">ランチメニューはこちら</span>
+            <span class="btn-sub-text">お得なランチ定食・限定メニュー</span>
+          </button>
+          
+          <button class="menu-detail-btn detail-trigger" data-menu-type="takeout">
+            <span class="btn-main-text">テイクアウトメニューはこちら</span>
+            <span class="btn-sub-text">おうちで楽しむゆずりはの味</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section" id="booking">
+      <div class="container scroll-reveal">
+        <div class="booking-header">
+          <span class="section-sub">Reservation</span>
+          <h2 class="section-title">ご予約について</h2>
+          <p class="booking-lead">ご予約は、下記のいずれかよりお気軽にご連絡ください。</p>
+        </div>
+        
+        <div class="booking-links">
+          <!-- Instagram Link -->
+          <a href="https://www.instagram.com/yuzuriha.urayasu/" class="booking-btn instagram" target="_blank" rel="noopener">
+            <span class="btn-text">Instagram DM</span>
+          </a>
+
+          <!-- Hotpepper Link -->
+          <a href="https://www.hotpepper.jp/strJ004558711/" class="booking-btn hotpepper" target="_blank" rel="noopener">
+            <span class="btn-text">ホットペッパーグルメ</span>
+          </a>
+
+          <!-- Official LINE Link -->
+          <a href="https://lin.ee/ss9lx9Rj" class="booking-btn line" target="_blank" rel="noopener">
+            <span class="btn-text">公式LINE</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info & Access Section -->
+    <section class="info-section" id="info">
+      <div class="container">
+        <div class="info-grid">
+          
+          <!-- Access Info -->
+          <div class="info-details scroll-reveal">
+            <span class="section-sub">Information</span>
+            <h2 class="section-title">店舗情報</h2>
+            
+            <table class="info-table">
+              <tbody>
+                <tr>
+                  <th>正式名称</th>
+                  <td>居酒屋ゆずりは</td>
+                </tr>
+                <tr>
+                  <th>所在地</th>
+                  <td>
+                    〒279-0002 千葉県浦安市北栄３丁目２５−２８ ウスタロスT.K
+                  </td>
+                </tr>
+                <tr>
+                  <th>電話番号</th>
+                  <td><a href="tel:090-8043-1131">090-8043-1131</a></td>
+                </tr>
+                <tr>
+                  <th>営業時間</th>
+                  <td>木～火　16:00～24:00</td>
+                </tr>
+                <tr>
+                  <th>定休日</th>
+                  <td>水曜日</td>
+                </tr>
+                <tr>
+                  <th>アクセス</th>
+                  <td>東西線 浦安駅 徒歩7分</td>
+                </tr>
+                <tr>
+                  <th>備考</th>
+                  <td>臨時休業については、下記リンクより公式Instagramをご確認ください。</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="info-sns-banner">
+              <a href="https://www.instagram.com/yuzuriha.urayasu/" target="_blank" rel="noopener" class="insta-banner-link">
+                <span>最新情報はInstagramからお届けしています</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Google Map -->
+          <div class="info-map scroll-reveal delay-1">
+            <div class="map-wrapper">
+              <!-- Google Map iframe -->
+              <iframe src="https://maps.google.com/maps?q=%E5%B1%85%E9%85%92%E5%B1%8B%E3%83%A5%E3%82%BA%E3%83%AA%E3%83%8F%E3%80%90%E6%A5%94%E3%80%91%2F%E6%B5%A6%E5%AE%89~%E3%81%A8%E3%82%8A%E5%A4%A9%E3%81%A8%E5%94%90%E6%8F%9A%E3%81%92~&output=embed&z=17" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section" id="contact">
+      <div class="container scroll-reveal">
+        <span class="section-sub">Contact</span>
+        <h2 class="section-title">お問い合わせ</h2>
+        <p class="contact-lead">
+          お店に関するご質問やお問い合わせは、こちらのフォームからお願いいたします。<br>
+          <span class="caution-text">※ご予約は上の「ご予約について」のリンクよりお願いいたします。</span>
+        </p>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="form-name">お名前 <span class="required">必須</span></label>
+            <input type="text" id="form-name" name="name" placeholder="山田 太郎" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="form-contact">ご連絡先 (メールアドレス or 電話番号) <span class="required">必須</span></label>
+            <input type="text" id="form-contact" name="contact" placeholder="example@gmail.com / 090-xxxx-xxxx" required>
+          </div>
+
+          <div class="form-group">
+            <label for="form-message">お問い合わせ内容 <span class="required">必須</span></label>
+            <textarea id="form-message" name="message" rows="6" placeholder="お問い合わせ内容をご記入ください。" required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-submit">
+              <span>送信する</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <svg viewBox="0 0 100 150" width="20" height="30">
+              <path d="M 50 150 C 48 110, 52 80, 50 50" stroke="#C85A4B" stroke-width="6" fill="none" stroke-linecap="round"/>
+              <path d="M 50 110 C 25 90, 20 50, 50 10 C 80 50, 75 90, 50 110 Z" fill="#2D4B37" stroke="#223829" stroke-width="2"/>
+            </svg>
+            <span>居酒屋 ゆずりは</span>
+          </a>
+          <p class="footer-desc">想いを受け継ぎ、次へ繋ぐ居酒屋。</p>
+        </div>
+        
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#about">ゆずりはについて</a></li>
+            <li><a href="#history">柊との繋がり</a></li>
+            <li><a href="#menu">自慢の逸品</a></li>
+            <li><a href="#info">店舗情報</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Izakaya Yuzuriha. All rights reserved.</p>
+        <div class="footer-sns">
+          <a href="https://www.instagram.com/yuzuriha.urayasu/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Menu Image Modal -->
+  <div id="menu-modal" class="menu-modal">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <button class="modal-close-btn" id="modal-close-btn" aria-label="閉じる">&times;</button>
+    <div class="modal-container">
+      <div class="modal-image-wrapper">
+        <img id="modal-img" src="" alt="メニュー詳細画像">
+      </div>
+      <!-- Navigation arrows -->
+      <button class="modal-nav-btn prev" id="modal-prev-btn" aria-label="前へ">&lt;</button>
+      <button class="modal-nav-btn next" id="modal-next-btn" aria-label="次へ">&gt;</button>
+      <!-- Counter indicator -->
+      <div class="modal-counter" id="modal-counter">1 / 1</div>
+    </div>
+  </div>
+
+  <!-- Floating Page Top Button -->
+  <button id="pagetop-btn" class="pagetop-btn" aria-label="ページトップへ戻る">↑</button>
+
+  <!-- JS Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
