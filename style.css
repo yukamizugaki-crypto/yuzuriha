@@ -338,8 +338,8 @@ ul {
 }
 
 .mobile-booking-shortcuts {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 8px;
 }
 
@@ -347,9 +347,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 4px;
+  padding: 10px;
   border-radius: 4px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border: 1px solid var(--text-main);
   background-color: var(--bg-primary);
@@ -1792,17 +1792,16 @@ ul {
 
   /* モバイル用の予約ボタン並び */
   .booking-links {
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
 
   .booking-btn {
-    flex: 1;
-    max-width: 220px;
-    padding: 14px 8px;
-    font-size: 0.8rem;
-    white-space: nowrap;
+    width: 100%;
+    max-width: 320px;
+    padding: 16px 24px;
+    font-size: 0.95rem;
   }
   
   .contact-form {
