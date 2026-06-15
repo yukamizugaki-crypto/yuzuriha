@@ -299,7 +299,7 @@ ul {
   height: 100vh;
   background-color: var(--bg-secondary);
   z-index: 105;
-  padding: 120px 40px 40px;
+  padding: 80px 24px 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -314,46 +314,47 @@ ul {
 .mobile-nav ul {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 14px;
 }
 
 .mobile-nav a {
   font-family: var(--font-serif);
-  font-size: 1.4rem;
+  font-size: 1.15rem;
   font-weight: 500;
   display: block;
 }
 
 .mobile-nav-footer {
   border-top: 1px solid rgba(45, 39, 34, 0.1);
-  padding-top: 20px;
+  padding-top: 16px;
 }
 
 .mobile-nav-footer p {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--text-muted);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-weight: 600;
 }
 
 .mobile-booking-shortcuts {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
 }
 
 .mobile-booking-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  padding: 10px 4px;
   border-radius: 4px;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   font-weight: 600;
   border: 1px solid var(--text-main);
   background-color: var(--bg-primary);
   color: var(--text-main);
   transition: var(--transition-fast);
+  white-space: nowrap;
 }
 
 .mobile-booking-link.insta:active {
@@ -579,6 +580,11 @@ ul {
   letter-spacing: 0.1em;
 }
 
+.line-part {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 /* -----------------------------------------
    Message Section (縦書きアシンメトリー)
 ----------------------------------------- */
@@ -695,6 +701,8 @@ ul {
   font-size: 2.2rem;
   color: var(--color-green);
   margin-bottom: 30px;
+  text-align: left;
+  white-space: nowrap;
 }
 
 .story-block p {
@@ -732,9 +740,9 @@ ul {
 }
 
 .history-header {
-  text-align: center;
+  text-align: left;
   max-width: 700px;
-  margin: 0 auto 80px;
+  margin: 0 0 80px 0;
 }
 
 .timeline-container {
@@ -833,9 +841,9 @@ ul {
 }
 
 .menu-header {
-  text-align: center;
+  text-align: left;
   max-width: 600px;
-  margin: 0 auto 80px;
+  margin: 0 0 80px 0;
 }
 
 .menu-intro {
@@ -908,7 +916,7 @@ ul {
 .booking-section {
   padding: 100px 24px;
   background-color: var(--bg-secondary);
-  text-align: center;
+  text-align: left;
 }
 
 .booking-header {
@@ -924,10 +932,10 @@ ul {
 /* ボタンを横一列に並べる（スッキリ見せる） */
 .booking-links {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .booking-btn {
@@ -1087,9 +1095,9 @@ ul {
 }
 
 .gallery-header {
-  text-align: center;
+  text-align: left;
   max-width: 600px;
-  margin: 0 auto 60px;
+  margin: 0 0 60px 0;
 }
 
 .gallery-intro {
@@ -1162,7 +1170,7 @@ ul {
 .menu-details-section {
   padding: 80px 24px;
   background-color: var(--bg-primary);
-  text-align: center;
+  text-align: left;
 }
 
 .details-header {
@@ -1173,16 +1181,18 @@ ul {
   font-size: 2rem;
   color: var(--color-green);
   position: relative;
-  display: inline-block;
+  display: block;
   padding-bottom: 12px;
+  text-align: left;
+  white-space: nowrap;
 }
 
 .details-title::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  transform: none;
   width: 50px;
   height: 2px;
   background-color: var(--color-red);
@@ -1197,7 +1207,7 @@ ul {
 /* ボタンのグリッド配置（PC時は2x2、スマホ時は縦1列） */
 .menu-detail-buttons {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
@@ -1552,6 +1562,11 @@ ul {
   opacity: 0.6;
 }
 
+.footer-sns {
+  display: flex;
+  gap: 16px;
+}
+
 .footer-sns a {
   text-decoration: underline;
 }
@@ -1733,7 +1748,12 @@ ul {
   }
   
   .title-main {
-    font-size: 2.6rem;
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+
+  .accent-text {
+    font-size: 0.75rem;
   }
   
   .message-section {
@@ -1752,7 +1772,17 @@ ul {
     border-bottom: 2px solid var(--color-red);
     padding-left: 0;
     padding-bottom: 8px;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    text-align: left;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .details-title {
+    font-size: 1.4rem;
   }
   
   .menu-grid {
@@ -1761,14 +1791,17 @@ ul {
 
   /* モバイル用の予約ボタン並び */
   .booking-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
   }
 
   .booking-btn {
-    width: 100%;
-    max-width: 320px;
+    flex: 1;
+    max-width: 220px;
+    padding: 14px 8px;
+    font-size: 0.8rem;
+    white-space: nowrap;
   }
   
   .contact-form {
