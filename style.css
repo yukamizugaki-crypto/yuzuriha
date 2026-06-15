@@ -302,7 +302,7 @@ ul {
   padding: 80px 24px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
   transition: var(--transition-smooth);
 }
@@ -324,12 +324,13 @@ ul {
   display: block;
 }
 
-.mobile-nav-footer {
+.mobile-nav-booking-wrapper {
   border-top: 1px solid rgba(45, 39, 34, 0.1);
   padding-top: 16px;
+  margin-top: 8px;
 }
 
-.mobile-nav-footer p {
+.mobile-nav-booking-lead {
   font-size: 0.7rem;
   color: var(--text-muted);
   margin-bottom: 8px;
