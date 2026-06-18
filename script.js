@@ -42,10 +42,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.getElementById('menu-toggle');
   const mobileNav = document.getElementById('mobile-nav');
   const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+  const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
 
   const toggleMenu = () => {
     menuToggle.classList.toggle('open');
     mobileNav.classList.toggle('open');
+    if (mobileNavOverlay) {
+      mobileNavOverlay.classList.toggle('open');
+    }
     document.body.classList.toggle('no-scroll'); // Prevent background scroll when open
   };
 
@@ -59,6 +63,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Close menu when overlay is clicked
+  if (mobileNavOverlay) {
+    mobileNavOverlay.addEventListener('click', () => {
+      if (mobileNav.classList.contains('open')) {
+        toggleMenu();
+      }
+    });
+  }
 
 
   /* -----------------------------------------
